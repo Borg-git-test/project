@@ -34,7 +34,7 @@ body{
     margin: auto;
     display: flex;
     width: 1000px;
-    padding: 10px;
+    /*padding: 10px;*/
 }
 #name{
     margin: auto auto auto 0;
@@ -91,6 +91,7 @@ body{
     /*padding: 0;*/
     display: flex;
     justify-items: center;
+    flex-wrap: wrap;
     padding: 25px 0 25px 0;
 }
 #menu li{
@@ -130,7 +131,7 @@ body{
 
 
 #content{
-    margin: auto 0 auto 0;
+    margin: 30px 0 200px 0;
 }
 #news {
     /*margin: auto 0 auto 0;*/
@@ -138,6 +139,7 @@ body{
     background-color: #767676;
     min-width: 265px;
     padding: 0 55px 100px 30px;
+    align-self: flex-start;
 }
 #news a{
     color: #ffffff;
@@ -179,6 +181,29 @@ body{
 
 #footer{
     margin-top: auto;
+    height: 220px;
+    background-color: #767676;
+    display: flex;
+    color: white;
 }
-
-
+#footer .in{
+    justify-content: space-around;
+}
+#footer ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 26px;
+}
+#footer a{
+    list-style-type: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+#from{
+    display: flex;
+}
+#footer p{
+    margin: 0;
+    padding-left: 10px;
+}
