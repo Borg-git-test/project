@@ -1,5 +1,8 @@
 body{
-
+    font-family: 'PT Sans', sans-serif;
+    line-height: 22px;
+    font-size: 14px;
+    margin: 0;
 }
 .wid{
     /*width: 100%;*/
@@ -24,17 +27,44 @@ body{
     margin: auto auto auto 0;
     height: 100px;
     width: 273px;
-    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    color: #767676;
 }
+#name img{
+    height: 100px;
+    width: 100px;
+}
+#name p{
+    /*padding: 9px;*/
+    margin: 0;
+}
+#name p:first-child{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 999;
+    line-height: 22px;
+}
+#name div{
+    margin: 0;
+    width: 163px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 #number{
     margin: auto 0 auto auto;
-    width: 300px;
-    height: 70px;
-    background-color: grey;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #767676;
 }
-
-
-
+#number p{
+    margin: 0;
+}
 
 #menu{
     margin-bottom: auto;
@@ -75,3 +105,8 @@ body{
 }
 
 
+
+@font-face {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
