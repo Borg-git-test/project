@@ -20,8 +20,8 @@ body{
 .in{
     margin: auto;
     display: flex;
-    width: 980px;
-    /*padding: 10px;*/
+    width: 1000px;
+    padding: 10px;
 }
 #name{
     margin: auto auto auto 0;
@@ -69,6 +69,11 @@ body{
 #menu{
     margin-bottom: auto;
     background-color: darkgrey;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    line-height: 1.2;
 }
 #menu ul{
     margin: auto;
@@ -76,14 +81,24 @@ body{
     /*padding: 0;*/
     display: flex;
     justify-items: center;
-    padding: 25px;
+    padding: 25px 0 25px 0;
 }
 #menu li{
     list-style-type: "|";
-    padding-inline: 25px;
+    /*border-left: 3px solid #ffffff;*/
+    padding-inline: 20px;
 }
 #menu li:first-child{
     list-style-type: none;
+    /*border-left: none;*/
+}
+#menu a{
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+}
+#menu a:hover{
+    text-decoration: underline;
 }
 
 #slider{
