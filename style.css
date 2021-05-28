@@ -10,6 +10,8 @@ body{
     /*width: 980px; + padding: 10px;*/
 
 }
+
+
 #header{
     margin-bottom: auto;
     display: flex;
@@ -17,6 +19,7 @@ body{
     height: 230px;
     background-color: lightgray;
 }
+
 .in{
     margin: auto;
     display: flex;
@@ -30,10 +33,6 @@ body{
     display: flex;
     justify-content: space-between;
     color: #767676;
-}
-#name img{
-    height: 100px;
-    width: 100px;
 }
 #name p{
     /*padding: 9px;*/
@@ -65,6 +64,7 @@ body{
 #number p{
     margin: 0;
 }
+
 
 #menu{
     margin-bottom: auto;
@@ -101,19 +101,28 @@ body{
     text-decoration: underline;
 }
 
+
 #slider{
     margin-bottom: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    /*Частина зображення, яка виходить
-     за межі блоку і вікна браузера, повинна ховатися */
-
+    /*width: 100%;*/
+    width: 1400px;
+    height: 400px;
+    overflow: hidden;
+    /*border: 3px solid black;*/
  }
+#slider img{
+    display: flex;
+    /*justify-self: center;*/
+    /*align-self: flex-end;*/
+    margin-inline: auto;
+    position: relative;
+    top: -60px;
+}
 
 #content{
     margin: auto 0 auto 0;
 }
+
 
 #footer{
     margin-top: auto;
