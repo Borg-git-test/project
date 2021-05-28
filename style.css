@@ -1,0 +1,77 @@
+body{
+
+}
+.wid{
+    /*width: 100%;*/
+    width: 1400px;
+    /*width: 980px; + padding: 10px;*/
+
+}
+#header{
+    margin-bottom: auto;
+    display: flex;
+    width: 1400px;
+    height: 230px;
+    background-color: lightgray;
+}
+.in{
+    margin: auto;
+    display: flex;
+    width: 980px;
+    /*padding: 10px;*/
+}
+#name{
+    margin: auto auto auto 0;
+    height: 100px;
+    width: 273px;
+    background-color: grey;
+}
+#number{
+    margin: auto 0 auto auto;
+    width: 300px;
+    height: 70px;
+    background-color: grey;
+}
+
+
+
+
+#menu{
+    margin-bottom: auto;
+    background-color: darkgrey;
+}
+#menu ul{
+    margin: auto;
+    list-style-type: none;
+    /*padding: 0;*/
+    display: flex;
+    justify-items: center;
+    padding: 25px;
+}
+#menu li{
+    list-style-type: "|";
+    padding-inline: 25px;
+}
+#menu li:first-child{
+    list-style-type: none;
+}
+
+#slider{
+    margin-bottom: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*Частина зображення, яка виходить
+     за межі блоку і вікна браузера, повинна ховатися */
+
+ }
+
+#content{
+    margin: auto 0 auto 0;
+}
+
+#footer{
+    margin-top: auto;
+}
+
+
