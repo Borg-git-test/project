@@ -17,7 +17,7 @@ body{
 }
 .wid{
     /*width: 100%;*/
-    width: 1400px;
+    min-width: 1400px;
     /*width: 980px; + padding: 10px;*/
 
 }
@@ -26,7 +26,6 @@ body{
 #header{
     margin-bottom: auto;
     display: flex;
-    width: 1400px;
     height: 230px;
     background-color: lightgray;
 }
@@ -116,7 +115,6 @@ body{
 #slider{
     margin-bottom: auto;
     /*width: 100%;*/
-    width: 1400px;
     height: 400px;
     overflow: hidden;
     /*border: 3px solid black;*/
@@ -134,6 +132,49 @@ body{
 #content{
     margin: auto 0 auto 0;
 }
+#news {
+    /*margin: auto 0 auto 0;*/
+    color: #ffffff;
+    background-color: #767676;
+    min-width: 265px;
+    padding: 0 55px 100px 30px;
+}
+#news a{
+    color: #ffffff;
+    text-decoration: none;
+    font-style: normal;
+}
+#news p{
+    margin-block: 20px;
+    font-style: italic;
+}
+#news #first{
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    font-style: normal;
+}
+#news #last{
+    text-align: right;
+    text-decoration: underline;
+    font-style: normal;
+}
+#text{
+    padding: 0 20px 20px 60px;
+    word-wrap: break-word;
+    text-align: justify;
+}
+#text p{
+    margin-block: 20px;
+}
+#title{
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+}
+
 
 
 #footer{
