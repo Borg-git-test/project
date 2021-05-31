@@ -41,3 +41,7 @@ function showSlides(n) {
 function autoPlay() {
     setInterval(nextSlide, 4000);
 }
+
+function fitBack() {
+    alert("some text")
+}
