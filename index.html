@@ -4,10 +4,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
     <meta charset="UTF-8">
     <title>MAKET 3</title>
 </head>
-<body>
+<body onload="autoPlay()">
 <div id="header" class="wid">
 <div class="in">
     <div id="name">
@@ -36,7 +37,14 @@
     </div>
 </div>
 <div id="slider" class="wid">
-    <img src="sloy_6_kopirovat_188.png" alt="no foto">
+    <img class="item" src="sloy_6_kopirovat_188.png" alt="no foto">
+    <img class="item" src="v1.png" alt="no foto">
+    <img class="item" src="v2.png" alt="no foto">
+    <img class="item" src="v3.png" alt="no foto">
+<div class="in">
+    <a class="previous" onclick="previousSlide()">&#10094;</a>
+    <a class="next" onclick="nextSlide()">&#10095;</a>
+</div>
 </div>
 <div id="content" class="wid">
     <div class="in">

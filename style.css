@@ -119,6 +119,7 @@ body{
     height: 400px;
     overflow: hidden;
     /*border: 3px solid black;*/
+    position: relative;
  }
 #slider img{
     display: flex;
@@ -128,6 +129,61 @@ body{
     position: relative;
     top: -60px;
 }
+#slider .in{
+    position: absolute;
+    /*z-index: 1;*/
+    top: 40%;
+    /*margin: auto;*/
+    padding: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+#slider .previous, #slider .next {
+    color: black;
+    /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
+    cursor: pointer;
+    /* Положение элемента задаётся относительно границ браузера: */
+    /*position: absolute;*/
+    /*bottom: 50%;*/
+    width: auto;
+    padding: 16px;
+    /* Оформление самих кнопок: */
+    font-weight: bold;
+    font-size: 25px;
+    /* Плавное появление фона при наведении курсора: */
+    /*transition: 0.6s ease;*/
+    /* Скругление границ: */
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: auto auto auto 0;
+}
+#slider .next {
+    /*right: 0;*/
+    margin: auto 0 auto auto;
+}
+
+/* При наведении курсора на кнопки добавляем фон кнопок: */
+/*
+#slider .previous:hover,
+#slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}*/
+
+/* Анимация слайдов: */
+#slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    /* Устанавливаем и изменяем степень прозрачности: */
+    from {
+        opacity: 0.3
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
 
 
 #content{
