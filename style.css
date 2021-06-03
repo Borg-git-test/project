@@ -235,7 +235,7 @@ body{
     list-style-type: none;
 }
 #leftblock img{
-    margin-top: 100px;
+    margin: 100px 50px 0 50px;
 }
 #leftblock #pd{
     font-size: 30px;
@@ -244,6 +244,15 @@ body{
     color: #444444;
 }
 
+
+
+#centerblock{
+    display: flex;
+    align-self: flex-start;
+    margin-left: auto;
+    flex-direction: column;
+    width: 800px;
+}
 #magaz{
     /*padding: 0 20px 20px 60px;*/
     align-self: flex-start;
@@ -395,6 +404,7 @@ form{
     min-height: 42px;
     border: 1px solid #c3c3c3;
     outline: 0;
+    padding-inline: 10px;
 }
 .form:required::placeholder{
     line-height: 1.2;
