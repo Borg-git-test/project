@@ -1,3 +1,8 @@
+html{
+    height: 100%;
+}
+
+
 @font-face {
     font-family: 'Open Sans Condensed';
     src: url('fonts/open-sans-condensed-v15-latin-300.eot'); /* IE9 Compat Modes */
@@ -15,6 +20,7 @@ body{
     font-size: 14px;
     margin: 0;
     position: relative;
+    min-height: 100%;
 }
 .wid{
     /*width: 100%;*/
@@ -131,7 +137,7 @@ body{
     height: 400px;
     overflow: hidden;
     position: relative;
- }
+}
 #slider img{
     display: flex;
     margin-inline: auto;
@@ -324,6 +330,10 @@ body{
     background-color: #767676;
     display: flex;
     color: white;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    transform: translate(0,100%);
 }
 #footer .in{
     justify-content: space-around;
@@ -384,6 +394,7 @@ form{
     min-width: 341px;
     min-height: 42px;
     border: 1px solid #c3c3c3;
+    outline: 0;
 }
 .form:required::placeholder{
     line-height: 1.2;
@@ -404,6 +415,7 @@ form{
     width: 341px;
     resize: none;
     border: 1px solid #c3c3c3;
+    outline: 0;
 }
 #last{
     font-size: 18px;
@@ -452,8 +464,3 @@ form{
     height: 15px;
     cursor: pointer;
 }
-
-/*@keyframes fade {*/
-/*    from {opacity: 0.3}*/
-/*    to {opacity: 1}*/
-/*}*/
