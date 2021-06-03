@@ -222,11 +222,11 @@ body{
 #leftblock a:hover{
     text-decoration: underline;
 }
-#leftblock li a:focus{
-    /*font-weight: 900;*/
+#leftblock a:focus{
     color: #010101;
     text-decoration: underline;
     display: list-item;
+    list-style-type: none;
 }
 #leftblock img{
     margin-top: 100px;
@@ -292,7 +292,12 @@ body{
     margin-inline: auto;
     color: #767676;
 }
-#page li.thre{
+#page a{
+    text-decoration: none;
+    font-style: normal;
+    color: #767676;
+}
+#page a:focus{
     font-size: 18px;
     color: #444444;
 }
