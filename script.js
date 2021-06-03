@@ -43,5 +43,10 @@ function autoPlay() {
 }
 
 function fitBack() {
-    alert("some text")
+    let element = document.getElementById("back");
+    element.style.display = "block";
+}
+function clic() {
+    let element = document.getElementById("back");
+    element.style.display = "none";
 }

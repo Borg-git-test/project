@@ -14,6 +14,7 @@ body{
     line-height: 22px;
     font-size: 14px;
     margin: 0;
+    position: relative;
 }
 .wid{
     /*width: 100%;*/
@@ -170,7 +171,25 @@ body{
 
 
 #content{
-    margin: 30px 0 200px 0;
+    margin: 0 0 200px 0;
+}
+#bredcramp{
+    display: flex;
+    padding: 0;
+}
+#bredcramp li{
+    list-style-type: "/";
+    padding-inline: 15px;
+    color: #767676;
+    line-height: 18px;
+    font-weight: 400;
+}
+#bredcramp li:first-child{
+    list-style-type: none;
+    padding-left: 0;
+}
+#bredcramp li a{
+    color: #767676;
 }
 #leftblock {
     min-width: 200px;
@@ -202,6 +221,12 @@ body{
 }
 #leftblock a:hover{
     text-decoration: underline;
+}
+#leftblock li a:focus{
+    /*font-weight: 900;*/
+    color: #010101;
+    text-decoration: underline;
+    display: list-item;
 }
 #leftblock img{
     margin-top: 100px;
@@ -316,3 +341,114 @@ body{
     margin: 0;
     padding-left: 10px;
 }
+
+
+#title{
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #535353;
+}
+#form{
+    min-width: 466px;
+    min-height: 578px;
+    background-color: white;
+    display: flex;
+    margin: auto;
+    z-index: 2;
+    position: absolute;
+    /*bottom: 44%;*/
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /*align-content: center;*/
+    /*justify-content: center;*/
+    text-align: center;
+}
+.form{
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    min-width: 341px;
+    min-height: 42px;
+    border: 1px solid #c3c3c3;
+}
+.form:required::placeholder{
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: italic;
+    color: #dc7f7f;
+    opacity: 0;
+}
+.form:required:focus::placeholder{
+    opacity: 1;
+}
+.form:required:focus:empty{
+    border: 1px solid #ff8383;
+    box-shadow: inset 0 0 13px 0 rgba(228,106,106,0.74);
+}
+#com{
+    min-height: 142px;
+    width: 341px;
+    resize: none;
+    border: 1px solid #c3c3c3;
+}
+#last{
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #777777;
+    padding: 15px;
+    font-style: normal;
+    border: none;
+}
+
+.pole{
+    line-height: 1.2;
+    font-weight: 400;
+    color: #535353;
+    margin-bottom: 10px;
+}
+#back {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    display: none;
+
+    animation-name: fade;
+    animation-duration: 1s;
+}
+#close{
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background-color: #777777;
+    bottom: 100%;
+    left: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#close a{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+/*@keyframes fade {*/
+/*    from {opacity: 0.3}*/
+/*    to {opacity: 1}*/
+/*}*/
