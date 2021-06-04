@@ -413,13 +413,26 @@ form{
     color: #dc7f7f;
     opacity: 0;
 }
-.form:required:focus::placeholder{
-    opacity: 1;
-}
-.form:required:focus:empty{
+.form:required:not(:placeholder-shown):invalid{
     border: 1px solid #ff8383;
     box-shadow: inset 0 0 13px 0 rgba(228,106,106,0.74);
 }
+.form:required:empty{
+    border: 1px solid #c3c3c3;
+    box-shadow: none;
+}
+.form:required:focus::placeholder{
+    opacity: 1;
+}
+.form:required:focus{
+    border: 1px solid #ff8383;
+    box-shadow: inset 0 0 13px 0 rgba(228,106,106,0.74);
+}
+.form:required:valid{
+     border: 1px solid #c3c3c3;
+     box-shadow: none;
+ }
+
 #com{
     min-height: 142px;
     width: 341px;
