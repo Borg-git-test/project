@@ -1,4 +1,48 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v20-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/open-sans-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v20-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v20-latin-regular.woff") format("woff"), url("../fonts/open-sans-v20-latin-regular.ttf") format("truetype"), url("../fonts/open-sans-v20-latin-regular.svg#OpenSans") format("svg");
+  /* Legacy iOS */ }
+
 body {
-  color: red; }
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 0; }
+
+header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
+  header .in {
+    display: flex;
+    width: 1220px;
+    margin: auto; }
+    header .in img {
+      margin: auto auto auto 0; }
+    header .in #menu {
+      margin: auto 0 auto auto; }
+      header .in #menu ul {
+        display: flex;
+        list-style-type: none;
+        flex-wrap: wrap; }
+        header .in #menu ul a {
+          color: #767676;
+          text-decoration: none;
+          padding: 15px; }
+        header .in #menu ul a:hover {
+          color: #337ab7;
+          background: #eeeeee; }
+        header .in #menu ul a.last {
+          color: #ffffff;
+          background: #337ab7;
+          border-radius: 25px; }
+        header .in #menu ul a.last:hover {
+          color: #44c0ef;
+          box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=style.css.map */
