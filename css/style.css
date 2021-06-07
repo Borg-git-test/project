@@ -7,20 +7,18 @@
   src: local(""), url("../fonts/open-sans-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v20-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v20-latin-regular.woff") format("woff"), url("../fonts/open-sans-v20-latin-regular.ttf") format("truetype"), url("../fonts/open-sans-v20-latin-regular.svg#OpenSans") format("svg");
   /* Legacy iOS */ }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  margin: 0; }
-
 header {
   position: fixed;
+  top: 0;
   display: flex;
   width: 100%;
   min-height: 100px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  background-color: white; }
   header .in {
     display: flex;
-    width: 1220px;
+    max-width: 1220px;
+    width: 100%;
     margin: auto; }
     header .in img {
       margin: auto auto auto 0; }
@@ -43,6 +41,117 @@ header {
           border-radius: 25px; }
         header .in #menu ul a.last:hover {
           color: #44c0ef;
-          box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5); }
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 0; }
+  body .first {
+    background-color: #F7F7F7;
+    width: 100%;
+    padding-top: 150px; }
+  body .first-content {
+    display: flex;
+    max-width: 1220px;
+    margin: 0 auto;
+    justify-content: space-between; }
+    body .first-content .text {
+      text-align: center;
+      font-size: 18px;
+      width: 50%;
+      margin-right: 15px;
+      color: #767676;
+      margin-block: auto; }
+      body .first-content .text p:first-child {
+        font-weight: bold;
+        font-size: 34px;
+        color: black; }
+    body .first-content #form {
+      width: 50%;
+      margin-left: 15px; }
+    body .first-content form {
+      display: flex;
+      flex-direction: column; }
+      body .first-content form p {
+        font-size: 22px; }
+      body .first-content form label:after {
+        background-image: url("../foto/icons/required.png");
+        background-size: 7px 7px;
+        content: "";
+        width: 10px;
+        line-height: 1;
+        display: inline-block;
+        background-repeat: no-repeat;
+        height: 8px;
+        margin-left: 3px; }
+    body .first-content .form {
+      height: 40px;
+      border: 1px solid #c3c3c3;
+      border-radius: 5px;
+      outline: 0;
+      padding-inline: 10px; }
+    body .first-content .form:focus {
+      border: 1px solid #66afe9;
+      box-shadow: 0 0 3px #66afe9; }
+    body .first-content .pole {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px; }
+      body .first-content .pole label {
+        margin-bottom: 5px; }
+    body .first-content a {
+      text-decoration: none; }
+    body .first-content .button {
+      color: #ffffff;
+      background: #337ab7;
+      border-radius: 25px;
+      min-width: 341px;
+      min-height: 42px;
+      text-align: center;
+      border: none;
+      padding: 15px;
+      font-style: normal;
+      margin: 20px auto; }
+    body .first-content .button:hover {
+      color: #44c0ef;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
+  body .second {
+    padding-top: 20px;
+    max-width: 1220px;
+    margin: auto; }
+    body .second .title {
+      font-size: 28px;
+      text-align: center; }
+    body .second #tre {
+      display: flex;
+      justify-content: center; }
+    body .second .tre {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 30%;
+      padding: 15px; }
+      body .second .tre .second-title {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #3498db; }
+  body .centr {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding-block: 60px;
+    width: 100%; }
+    body .centr #fore {
+      max-width: 1220px;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between; }
+    body .centr .fore {
+      width: 25%; }
+      body .centr .fore .num {
+        font-size: 28px;
+        margin: 20px auto 10px auto; }
 
 /*# sourceMappingURL=style.css.map */
