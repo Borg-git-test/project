@@ -3,13 +3,19 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
     <title>MAKET 4</title>
 </head>
 <body>
 <header>
 <div class="in">
-    <a href="#"><img src="foto/logo_Oxit.png" height="75px" width="75px" alt=""></a>
-    <div id="menu">
+    <img src="foto/logo_Oxit.png" height="75px" width="75px" alt="">
+    <div class="burger">
+        <span></span>
+    </div>
+    <nav id="menu">
         <ul>
             <li><a href="#">Головна</a></li>
             <li><a href="#">Програма курсу</a></li>
@@ -18,7 +24,7 @@
             <li><a href="#">Ментори</a></li>
             <li><a class="last" href="#">Подати заявку</a></li>
         </ul>
-    </div>
+    </nav>
 </div>
 </header>
 <div class="first">
@@ -52,7 +58,7 @@
     </div>
     <div>
     <input type="checkbox" id="Check">
-    <label for="Check">Я погоджуюся із <a href="#">Політикою Конфіденційності</a> </label>
+        <label for="Check">Я погоджуюся із <a href="#">Політикою Конфіденційності</a> </label>
     </div>
 
         <input class="button" type="submit" name="submit" value="ЗАРЕЄСТРУВАТИСЯ ЗАРАЗ">
@@ -62,7 +68,7 @@
 </div>
 </div>
 <div class="second">
-    <p class="title">Курс «Розробка сайтів»</p>
+    <p onclick="nextSlide()" class="title">Курс «Розробка сайтів»</p>
     <div id="tre">
         <div class="tre">
             <img src="foto/icons/course-icon-1.png" width="85" height="85" alt="">
@@ -83,6 +89,7 @@
 </div>
 <div class="centr">
     <div id="fore">
+        <div class="to-fore">
     <div class="fore">
         <img src="foto/icons/statistic-icon-1.png" width="85" height="60" alt="">
         <p class="num">25</p>
@@ -93,6 +100,8 @@
             <p class="num">836</p>
             <p>годин заннять проведено</p>
         </div>
+        </div>
+        <div class="to-fore">
         <div class="fore">
             <img src="foto/icons/statistic-icon-3.png" width="85" height="60" alt="">
             <p class="num">500</p>
@@ -103,7 +112,19 @@
             <p class="num">120</p>
             <p>випускників курсів працевлаштовано</p>
         </div>
-
+        </div>
+    </div>
+</div>
+<div class="slider">
+    <p class="title">Що кажуть студенти наших курсів:</p>
+    <div class="sd-elem">
+        <div class="sitate">
+            <p>Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder. Зараз я можу сказати, що Drupal та OxIT повністю змінили моє життя.</p>
+        </div>
+    <div class="aut">
+        <p>Коля</p>
+        <p>Drupal-developer</p>
+    </div>
     </div>
 </div>
 </body>
