@@ -2,6 +2,7 @@ $(document).ready(function () {
     $('.burger').click(function (event) {
         $('.burger,#menu').toggleClass('active')
     });
+    // $("#wideo").fitVids();
 });
 
 // $(document).ready(function () {
@@ -69,13 +70,14 @@ $(document).ready(function () {
     if ($('#slick-slide-control00').attr('aria-label') == "1 of 1") {
         $('.slick-dots .slick-active button').css('display','none')
     };
+
     $('.slider').slick({
         arrows:false,
         dots:true,
         // infinite:false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        speed: 500,
+        speed: 800,
         draggable: false,
         swipe: true,
         touchThreshold: 10,
@@ -88,5 +90,20 @@ $(document).ready(function () {
         pauseOnDotsHover: true,
         pauseOnHover: true,
     });
+
+    $('.slider-mentors').slick({
+        arrows:false,
+        dots:true,
+        // infinite:false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 300,
+        draggable: false,
+        swipe: true,
+        touchThreshold: 10,
+        touchMove: true,
+        waitForAnimate: true,
+    });
+
 });
 
