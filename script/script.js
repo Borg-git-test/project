@@ -67,10 +67,6 @@ $(document).ready(function () {
         ],
     });
 
-    if ($('#slick-slide-control00').attr('aria-label') == "1 of 1") {
-        $('.slick-dots .slick-active button').css('display','none')
-    };
-
     $('.slider').slick({
         arrows:false,
         dots:true,
@@ -103,6 +99,11 @@ $(document).ready(function () {
         touchThreshold: 10,
         touchMove: true,
         waitForAnimate: true,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        pauseOnFocus: true,
+        pauseOnDotsHover: true,
+        pauseOnHover: true,
     });
 
 });
