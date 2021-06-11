@@ -1,0 +1,45 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/grid";
+
+
+body {
+  margin: auto;
+}
+header {
+  margin: auto;
+  width: 1440px;
+  height: 640px;
+  background: url("../img/bg_806.png") 100% 100% no-repeat;
+  background-size: cover;
+  .logo {
+    color: white;
+    display: flex;
+    align-items: center;
+    p:first-child {
+      //font-family: Quicksand;
+      font-size: 24px;
+      line-height: 58px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    p:last-child {
+      opacity: 0.3;
+      //font-family: 'Source Sans Pro';
+      font-size: 9px;
+      line-height: 10px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #ffffff;
+    }
+    p {
+      margin: 0;
+      padding: 10px;
+    }
+  }
+}
