@@ -1,8 +1,12 @@
 $(document).ready(function () {
     $('.burger').click(function (event) {
         $('.burger,#menu').toggleClass('active')
+        // $('.burger,.lin').removeClass('active')
     });
-    // $("#wideo").fitVids();
+    $('.lin').click(function (event) {
+        $('.burger,#menu').removeClass('active')
+    });
+        // $("#wideo").fitVids();
 });
 
 // $(document).ready(function () {
