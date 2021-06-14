@@ -609,25 +609,53 @@
   .offset-xl-11 {
     margin-left: 91.66667%; } }
 
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/SourceSansPro-Regular.ttf");
+  /* IE9 Compat Modes */ }
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  src: url("../fonts/SourceSansPro-SemiBold.ttf");
+  /* IE9 Compat Modes */ }
+
+@font-face {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  src: url("../fonts/Quicksand-VariableFont_wght.ttf");
+  /* IE9 Compat Modes */ }
+
 body {
-  margin: auto; }
+  margin: auto;
+  width: 1440px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400; }
 
 header {
   margin: auto;
-  width: 1440px;
   height: 640px;
   background: url("../img/bg_806.png") 100% 100% no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  color: white; }
+  header .row {
+    padding-top: 35px; }
   header .logo {
     color: white;
     display: flex;
     align-items: center; }
+    header .logo span {
+      letter-spacing: 1px; }
     header .logo p:first-child {
+      font-family: 'Quicksand', sans-serif;
       font-size: 24px;
-      line-height: 58px;
       font-weight: 700;
+      letter-spacing: 1px;
       text-transform: uppercase;
-      color: #ffffff; }
+      color: #ffffff;
+      padding-right: 4px; }
     header .logo p:last-child {
       opacity: 0.3;
       font-size: 9px;
@@ -635,9 +663,103 @@ header {
       font-weight: 400;
       text-transform: uppercase;
       letter-spacing: 0.14em;
-      color: #ffffff; }
+      color: #ffffff;
+      margin-top: 2px; }
     header .logo p {
       margin: 0;
-      padding: 10px; }
+      padding-right: 10px; }
+  header .right {
+    margin: 3px 0 0 auto; }
+    header .right .menu {
+      display: flex;
+      justify-content: flex-end; }
+      header .right .menu ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0; }
+        header .right .menu ul li {
+          padding-left: 23.2px;
+          font-size: 16px;
+          font-weight: 600;
+          color: #fffefe; }
+        header .right .menu ul a {
+          text-decoration: none;
+          color: white;
+          position: relative; }
+        header .right .menu ul a:before, header .right .menu ul a:after {
+          content: '';
+          width: 20px;
+          height: 2px;
+          background-color: #3082a8;
+          position: absolute;
+          bottom: -11px;
+          transform: translate(0, -50%);
+          opacity: 0; }
+        header .right .menu ul a:after {
+          right: 49%;
+          margin-right: 1px; }
+        header .right .menu ul a:before {
+          left: 51%;
+          margin-left: 1px; }
+        header .right .menu ul a:hover::before, header .right .menu ul a:hover::after {
+          opacity: 1; }
+  header .row:nth-child(2) {
+    padding-top: 56px; }
+  header .left-haed {
+    align-self: flex-start; }
+    header .left-haed p:first-child {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      color: #008ed6;
+      margin-top: 37px;
+      margin-bottom: 0; }
+    header .left-haed p:nth-child(2) {
+      font-size: 48px;
+      line-height: 48px;
+      font-weight: 600;
+      text-transform: none;
+      color: #ffffff;
+      margin: 20px 0 0 0; }
+    header .left-haed p:nth-child(3) {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: normal;
+      color: #999999;
+      margin: 24px 0 0 0;
+      width: 97%; }
+    header .left-haed .buttons {
+      display: flex;
+      margin-top: 60px; }
+      header .left-haed .buttons .button {
+        width: 160px;
+        height: 49px;
+        background-color: #008ed6;
+        border-radius: 3px;
+        font-size: 14px;
+        line-height: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-align: center;
+        margin-right: 20px;
+        letter-spacing: 0.2px; }
+      header .left-haed .buttons .button:last-child {
+        width: 158px;
+        height: 48px;
+        line-height: 49px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: rgba(0, 142, 214, 0); }
+  header .foto {
+    margin: auto 0 auto auto;
+    padding-right: 6px; }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px; } }
 
 /*# sourceMappingURL=style.css.map */
