@@ -626,6 +626,11 @@
   src: url("../fonts/Quicksand-VariableFont_wght.ttf"); }
 
 @font-face {
+  font-family: 'Source Sans Pro';
+  font-weight: 800;
+  src: url("../fonts/SourceSansPro-Bold.ttf"); }
+
+@font-face {
   font-family: 'Source Sans Pro - It';
   font-style: italic;
   src: url("../fonts/SourceSansPro-Italic.ttf"); }
@@ -719,7 +724,7 @@ header {
       font-size: 14px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 1.6px;
+      letter-spacing: 1.4px;
       color: #008ed6;
       margin-top: 37px;
       margin-bottom: 0; }
@@ -781,7 +786,7 @@ header {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.115em;
+    letter-spacing: 0.1em;
     color: #008ed6;
     margin: 0; }
   .overv .wiz-line {
@@ -847,7 +852,7 @@ header {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.115em;
+    letter-spacing: 0.1em;
     color: #008ed6; }
   .details .to-text .title {
     font-size: 36px;
@@ -960,8 +965,7 @@ header {
       .to-slider .slid .slid-text p:last-child {
         font-size: 14px;
         line-height: 22px;
-        font-weight: 700;
-        letter-spacing: 0.15px; }
+        font-weight: 700; }
 
 .slick-list {
   overflow: hidden;
@@ -1043,17 +1047,190 @@ header {
       color: #ffffff;
       text-decoration: none; }
   .aft-slide .buttons .button:first-child {
-    width: 158px;
-    height: 48px;
-    line-height: 49px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 160px;
+    height: 50px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
     background-color: rgba(0, 142, 214, 0); }
   .aft-slide .buttons .button:hover {
     width: 160px;
     height: 50px;
     line-height: 50px;
     background-color: #008ed6;
-    border: 0 solid rgba(255, 255, 255, 0.2); }
+    box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0.2); }
+
+.for-prise {
+  margin-top: 56px; }
+  .for-prise .overv {
+    margin: auto; }
+    .for-prise .overv .wiz-line:before, .for-prise .overv .wiz-line:after {
+      bottom: -28px; }
+  .for-prise .elem-col {
+    padding: 0 0 0 0; }
+  .for-prise .prise {
+    box-shadow: inset 0 0 0 1px #e0e0e0;
+    padding: 0;
+    margin: 99px 15px 0 13px; }
+    .for-prise .prise .titl {
+      padding-top: 2px;
+      height: 68px;
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .for-prise .prise .pris {
+      box-shadow: inset 0 0 0 1px #e0e0e0;
+      text-align: center; }
+      .for-prise .prise .pris p {
+        margin: 0;
+        display: flex;
+        align-items: start;
+        justify-content: center; }
+      .for-prise .prise .pris p:first-child {
+        padding-top: 25px;
+        font-size: 60px;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-left: -5px; }
+        .for-prise .prise .pris p:first-child span {
+          font-size: 28px;
+          padding-top: 12px; }
+      .for-prise .prise .pris p:last-child {
+        padding-bottom: 37px;
+        font-size: 18px;
+        line-height: 14px;
+        font-weight: 400;
+        color: #999999; }
+    .for-prise .prise .text-pr {
+      padding: 28px 30px 28px 34px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #999999; }
+      .for-prise .prise .text-pr span {
+        color: #008ed6; }
+      .for-prise .prise .text-pr button {
+        margin-top: 22px;
+        width: 202px;
+        height: 52px;
+        border-radius: 3px;
+        font-size: 14px;
+        line-height: 50px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #008ed6;
+        text-align: center;
+        letter-spacing: 1px;
+        transform: scale(0.8, 1);
+        border: none;
+        box-shadow: inset 0 0 0 1px #e0e0e0;
+        background-color: rgba(0, 142, 214, 0); }
+    .for-prise .prise button:hover {
+      background-color: #008ed6;
+      box-shadow: none;
+      color: #fafafa;
+      width: 200px;
+      height: 50px;
+      margin-top: 23px;
+      margin-bottom: 1px; }
+  .for-prise .elem-col:nth-child(3) .titl {
+    color: #008ed6; }
+  .for-prise .elem-col:nth-child(3) .pris {
+    background-color: #008ed6; }
+    .for-prise .elem-col:nth-child(3) .pris p {
+      color: #fafafa; }
+  .for-prise .elem-col:nth-child(3) button {
+    background-color: #008ed6;
+    box-shadow: none;
+    color: #fafafa;
+    width: 200px;
+    height: 50px;
+    margin-top: 23px;
+    margin-bottom: 1px; }
+
+.contact .overv {
+  padding-top: 56px; }
+  .contact .overv .wiz-line:before, .contact .overv .wiz-line:after {
+    bottom: -29px; }
+
+.labelu {
+  text-align: center;
+  padding: 88px 0 0 0; }
+  .labelu p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #999999;
+    margin: 0 0 3px -5px; }
+  .labelu img {
+    margin-bottom: 23px; }
+
+.labelu:nth-child(2) p {
+  margin: 0 0 3px -1px; }
+
+.labelu:last-child {
+  padding: 93px 0 0 0; }
+  .labelu:last-child p {
+    margin: 5px 0 3px -1px; }
+
+.back3 {
+  background-color: #ededed; }
+
+.form {
+  margin: auto;
+  width: 770px;
+  height: 360px;
+  background-color: #15141a;
+  padding: 0;
+  margin-top: 68px; }
+  .form .form-group {
+    margin-top: 39px;
+    padding: 0; }
+    .form .form-group .form-control {
+      display: flex;
+      flex-direction: column;
+      height: 50px;
+      width: 298px;
+      background-color: rgba(0, 142, 214, 0);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+      border: none;
+      text-transform: uppercase;
+      margin: 20px 0 20px 65px;
+      padding: 0 0 0 2px; }
+    .form .form-group .form-control::placeholder {
+      opacity: 0.2;
+      font-size: 14px;
+      line-height: 48px;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: -0.3px;
+      transform: scale(0.9, 1); }
+    .form .form-group .textarea {
+      height: 189px;
+      width: 279px;
+      resize: none;
+      padding-top: 1px;
+      padding-left: 21px;
+      margin: 20px 0 20px 0; }
+    .form .form-group .textarea::placeholder {
+      transform: scale(1, 1); }
+    .form .form-group .button {
+      width: 180px;
+      height: 50px;
+      background-color: #008ed6;
+      border-radius: 3px;
+      border: none;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-align: center;
+      margin-left: 130px;
+      margin-top: 1px;
+      letter-spacing: -0.2px;
+      transform: scale(0.88, 1); }
 
 @media (min-width: 1200px) {
   .container {
