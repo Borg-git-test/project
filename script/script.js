@@ -1,4 +1,14 @@
 $(document).ready(function () {
+    $('.burger').click(function (event) {
+        $('.burger,.menu').toggleClass('active')
+        // $('.burger,.lin').removeClass('active')
+    });
+    $('.lin').click(function (event) {
+        $('.burger,.menu').removeClass('active')
+    });
+    // $("#wideo").fitVids();
+});
+$(document).ready(function () {
     $('.slider').slick({
         arrows:false,
         dots:true,
@@ -17,5 +27,16 @@ $(document).ready(function () {
         // pauseOnFocus: true,
         // pauseOnDotsHover: true,
         // pauseOnHover: true,
+        responsive:[
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    // dots:true,
+                    // draggable: false,
+                    swipe: true,
+                }
+            }],
     });
 });
