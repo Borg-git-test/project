@@ -37,13 +37,13 @@
   src: url('../fonts/SourceSansPro-Light.ttf');
 }
 
-@mixin text($standart1) {
+@mixin text($weight:400, $size:18px, $coll:#999999, $height:26px) {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
   letter-spacing: normal;
-  color: #999999;
+  color: $coll;
 }
 
 
@@ -174,7 +174,7 @@ header {
       margin: 20px 0 0 0;
     }
     p:nth-child(3) {
-      @include text(1);
+      @include text();
       margin: 24px 0 0 0;
       width: 97%;
     }
