@@ -698,6 +698,11 @@ header {
       margin-bottom: 1px;
     }
   }
+  .elem-col:first-child {
+    button {
+      margin-left: -2px;
+    }
+  }
   .elem-col:nth-child(3) {
     .titl {
       color: #008ed6;
@@ -759,6 +764,7 @@ header {
   z-index: 1;
 }
 $pad: 2px;
+$pad3: 19px;
 .form {
   z-index: 3;
   margin: auto;
@@ -773,41 +779,56 @@ $pad: 2px;
     .form-control {
       display: flex;
       flex-direction: column;
-      height: 50px;
-      width: 300px - $pad;
+      height: 50px - $pad;
+      width: 300px - ($pad + $pad);
       background-color: rgba(0,142,214,0.0);
       box-shadow: inset 0 0 0 1px rgba(255,255,255,0.2);
       //border: 1px solid rgba(255,255,255,0.2);
       border: none;
-      text-transform: uppercase;
-      margin: 20px 0 20px 65px;
-      padding: 0 0 0 $pad;
+      color: white;
+      margin: 20px 0 0 66px;
+      //padding: 0 0 0 20px;
       //letter-spacing: 0.5px;
+      //transform: scale(0.9,1);
+      border-radius: 3px;
     }
     .form-control::placeholder {
     opacity: 0.2;
+      padding: 0 0 0 0;
     font-size: 14px;
     line-height: 48px;
     font-weight: 600;
     color: #ffffff;
       letter-spacing: -0.3px;
       transform: scale(0.9,1);
+      text-transform: uppercase;
   }
+    .form-control:focus {
+      padding-left: 20px;
+      width: 300px - $pad - 20px;
+      &::placeholder {
+        opacity: 0;
+      }
+    }
     $pad2: 1px;
-    $pad3: 21px;
     .textarea {
-      height: 190px - $pad2;
-      width: 300px - $pad3;
+      height: 190px - ($pad + $pad);
+      width: 300px - ($pad3 + $pad);
       resize: none;
-      padding-top: $pad2;
-      padding-left: $pad3;
+      padding-top: $pad;
+      padding-left: $pad3 + $pad2;
       margin: 20px 0 20px 0;
     }
     .textarea::placeholder {
       transform: scale(1,1);
+      //letter-spacing: -1px;
+    }
+    .textarea:focus {
+      padding-top: 20px;
+      height: 190px - $pad -20px;
     }
     .button {
-      width: 180px;
+      width: 180px + $pad;
       height: 50px;
       background-color: #008ed6;
       border-radius: 3px;
@@ -820,9 +841,9 @@ $pad: 2px;
       color: #ffffff;
       text-align: center;
       //letter-spacing: normal;
-      margin-left: 130px;
+      margin-left: 129px;
       margin-top: 1px;
-      letter-spacing: -0.2px;
+      letter-spacing: -0.5px;
       transform: scale(0.88,1);
     }
   }
@@ -836,6 +857,7 @@ iframe {
   position: absolute;
   top: -65px;
   height: 490px;
+  //transform: translateY(-100px);
 }
 .footer {
   position: relative;
@@ -885,6 +907,7 @@ iframe {
     line-height: 48px;
     font-weight: 600;
     text-transform: uppercase;
+    //margin-bottom: 0;
   }
 }
 
@@ -928,13 +951,26 @@ iframe {
     }
   }
   .for-prise .prise .text-pr button {
-      width: auto;
+      width: 100%;
       height: auto;
     padding-inline: 25px;
     }
+  .contact {
+    .row {
+      justify-content: center;
+    }
+  }
   }
 
 @media (max-width: 991px) {
+  header {
+    .left-haed {
+      padding-inline: 0;
+    }
+    .foto {
+      padding-inline: 0;
+    }
+  }
   .details {
     .foto2 {padding: 0}
     .to-text {
@@ -946,27 +982,66 @@ iframe {
     .slid {
       .text-slid {
         text-align: center;
+        margin-inline: auto;
       }
       .img {
         justify-content: center;
         .slid-text {width: auto}
       }
     }
+    .slick-dots {
+      bottom: -100px;
+    }
   }
   .aft-slide {
     .b-text {
       justify-content: center;
       text-align: center;
+      padding-inline: 0;
     }
     .buttons {
       margin: 0;
       padding-bottom: 45px;
+      padding-inline: 0;
+      justify-content: space-around;
         .button:first-child {
-          margin: 0 15px 0 auto;
+          //margin: 0 15px 0 auto;
+          margin: 0;
+          width: 45%;
         }
         .button:last-child {
-          margin: 0 auto 0 15px;
+          //margin: 0 auto 0 15px;
+          margin: 0;
+          width: 45%;
         }
+    }
+  }
+  .form {
+    height: 100%;
+    padding-bottom: 35px;
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      .form-control {
+        margin-inline: auto;
+        width: 80%;
+        &:focus {
+          padding-left: 20px;
+          width: calc(80% - 20px);
+        }
+      }
+      .textarea {
+        width: calc(80% - 21px);
+        //width: calc(80% - ($pad3 / 2));
+      }
+      .button {
+        //margin-left: 0;
+        margin-inline: auto;
+        align-items: center;
+        //width: 80%;
+        //margin-inline: auto;
+        //transform: translate(-50%,0);
+       }
     }
   }
 }
@@ -974,24 +1049,25 @@ iframe {
 .burger {display: none}
 //.back1 {display: none}
 @media (max-width: 767px) {
-  $pa: 100px;
+  $pa: 0;
   header {
     height: auto;
-
     .menus {
       position: fixed;
       left: 0;
+      right: 0;
       //padding-inline: 25px;
-      width: 100%;
-      z-index: 3;
-      background-color: rgba(0, 0, 0, 0.5);
+      //width: 100%;
+      z-index: 5;
+      background-color: #15141a;
       padding-bottom: 20px;
+      padding-inline: 25px;
+      //max-height: calc(100% - 50px);
+      //overflow-y: auto;
     }
-
     .logo {
       margin-left: $pa
     }
-
     //height: 75px;
     .right {
       position: relative;
@@ -1076,13 +1152,17 @@ iframe {
   .left-haed {
     padding-top: 20px;
     text-align: center;
-
     .buttons {
+      justify-content: space-around;
       .button:first-child {
-        margin: 0 15px 0 auto;
+        //margin: 0 15px 0 auto;
+        margin: 0;
+        width: 45%;
       }
       .button:last-child {
-        margin: 0 auto 0 15px;
+        //margin: 0 auto 0 15px;
+        margin: 0;
+        width: 45%;
       }
     }
   }
@@ -1090,7 +1170,22 @@ iframe {
   .list-id {
     padding-bottom: 25px;
   }
+  .container {
+    padding-inline: 0;
+  }
+  .row {
+    margin-inline: 0;
+  }
+  .details .column {
+    margin-left: 5px;
+  }
 }
-
-
+@media (max-width: 575px) {
+  header .menus {
+      padding-top: 20px;
+    }
+  header .left-haed p:nth-child(2) {
+      font-size: 32px;
+    }
+}
 
